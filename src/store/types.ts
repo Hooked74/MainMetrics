@@ -1,0 +1,7 @@
+enum Types {
+  START_LOADING_METRICS,
+  SUCCESS_LOADING_METRICS,
+  ERROR_LOADING_METRICS
+}
+
+export default Types;
