@@ -63,6 +63,7 @@ jspm_packages/
 # production
 /build
 /dist
+/metrics
 
 # IntelliJ project files
 .idea
@@ -77,6 +78,7 @@ jspm_packages/
 
 # misc
 .cache
+__pycache__
 .DS_Store
 .env.local
 .env.development.local

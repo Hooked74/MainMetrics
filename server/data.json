@@ -1,0 +1,101 @@
+{
+  "last_hour": {
+    "gate_id": 20,
+    "web_pessimizer": 100.0,
+    "mobile_pessimizer": 0.000999999974737875,
+    "bookings_previous": 98,
+    "bookings_current": 32,
+    "searches_previous": 88385,
+    "searches_current": 66815,
+    "clicks_previous": 784,
+    "clicks_current": 428,
+    "ctr": 0.640574721245229,
+    "str": 0,
+    "avg_price": 10243.0263157895,
+    "timeout": 0,
+    "zeroes": 0,
+    "errors": 0,
+    "errors_list": []
+  },
+  "today": {
+    "gate_id": 20,
+    "web_pessimizer": 100.0,
+    "mobile_pessimizer": 0.000999999974737875,
+    "bookings_previous": 1207,
+    "bookings_current": 1084,
+    "searches_previous": 188385,
+    "searches_current": 166815,
+    "clicks_previous": 12364,
+    "clicks_current": 10210,
+    "ctr": 0.26052388326287,
+    "str": 5.7289099526066,
+    "avg_price": 10243.0263157895,
+    "timeout": 0.117542189065684,
+    "zeroes": 2.53052033295241,
+    "errors": 0.078257313789748,
+    "errors_list": [
+      {
+        "count": 18,
+        "code": 500
+      }
+    ]
+  },
+  "yesterday": {
+    "gate_id": 20,
+    "web_pessimizer": 100.0,
+    "mobile_pessimizer": 0.000999999974737875,
+    "bookings_previous": 3641,
+    "bookings_current": 3465,
+    "searches_previous": 2050500,
+    "searches_current": 2188541,
+    "clicks_previous": 23364,
+    "clicks_current": 23210,
+    "ctr": 1.06052388326287,
+    "str": 14.9289099526066,
+    "avg_price": 9447.87135852322,
+    "timeout": 0.217542189065684,
+    "zeroes": 5.03052033295241,
+    "errors": 0.376232384954177,
+    "errors_list": [
+      {
+        "count": 305,
+        "code": 599
+      },
+      {
+        "count": 615,
+        "code": null
+      }
+    ]
+  },
+  "last_three_days": {
+    "gate_id": 20,
+    "web_pessimizer": 100.0,
+    "mobile_pessimizer": 0.000999999974737875,
+    "bookings_previous": 8647,
+    "bookings_current": 7556,
+    "searches_previous": 6118984,
+    "searches_current": 4445192,
+    "clicks_previous": 60505,
+    "clicks_current": 50207,
+    "ctr": 1.12946752356254,
+    "str": 15.0496942657398,
+    "avg_price": 10694.8964067661,
+    "timeout": 0.122851836321131,
+    "zeroes": 5.55262854787825,
+    "errors": 0.143953287057117,
+    "errors_list": [
+      {
+        "count": 2,
+        "code": 502
+      },
+      {
+        "count": 720,
+        "code": 599
+      },
+      {
+        "count": 1780,
+        "code": null
+      }
+    ]
+  }
+}

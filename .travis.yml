@@ -1,0 +1,12 @@
+sudo: required
+dist: trusty
+language: node_js
+nodejs:
+  - 9.11.1
+deploy:
+  provider: heroku
+  api_key:
+    secure: S66VxgIC3XsoUUv8wn8dQkaAq4OkriTSmhMXOnaq/k/RjoMYJ3cBag3gnZ7KEbuq/msHh5zVpSpmKo46UX/q99PAHhh6j45eE4G5Zj50+kyu0fRBXX8aSGv81Zj/hI6L8bRImcj3OFz529n2SjY9eWU9doASDNd7CLNXW7ciyyR8wGygAIqMy/EbEiELiem5NPrxZujL4iOVav11bSpBVCrA73TxLMB7w9Vf7nAkSm7Q3VFqSkKeNzAGX3dpof1V478WqcyUNacEjDOJS/HJIA4jgp+U5N4NIza1rFEqRqE5wKPMBEUcYFJ8vdvYammy43V+lmMuSJKUOW2EpfliWtpg36cKIkQg3ow1lcsaWkIQM7JjnnbMsdUK+5s/LJg5bVo3QLGJl1NQ+LZpGbqTPAaIH9pnyzneqlR9anH2uQigRADr8zz1AkCGj8iMsRLntuo3R4FBk06OS+1V1wBwUv8ewu31lAB36HB3YlcmVf7JnKwIF3ovL85MIEi+LBUU6m6BKHNwxWi2h/HGXoIQX72IViZRydtGeDXiZcSr9Y6oWnWYmyU1sQUQo5LOOBlALXuTQfP2DlcLVwV4Kc3ElGbU6YKwaPTKbXrSvXTuy6oSjbN7irVz9ELZb9h0NvG9fm9Aup2LtPsv+JvmQEPVc3nwmhg8P1nYAkoElUp0Cvw=
+  app: mysterious-peak-44366
+  on:
+    repo: Hooked74/MainMetrics
