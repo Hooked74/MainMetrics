@@ -3,6 +3,8 @@ dist: trusty
 language: node_js
 nodejs:
   - 9.11.1
+script:
+  - CI=true yarn test
 deploy:
   provider: heroku
   api_key:

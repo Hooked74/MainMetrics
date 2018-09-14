@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import { AppContainer } from "react-hot-loader";
 import { Provider } from "react-redux";
 import { Store } from "redux";
-import MainMetricsApp from "./components/MainMetricsApp/MainMetricsApp";
+import MainMetricsApp from "./containers/MainMetricsApp/MainMetricsApp";
 import createStore from "./store";
 import { isIE } from "./utils";
 
@@ -12,8 +12,8 @@ import IAction = MainMetrics.store.IAction;
 
 class BootManager {
   private static readonly ROOT_ID: string = "root";
-  private static readonly ROOT_COMPONENT_PATH: string =
-    "./components/MainMetricsApp/MainMetricsApp";
+  private static readonly ROOT_CONTAINER_PATH: string =
+    "./containers/MainMetricsApp/MainMetricsApp";
 
   public async setup(): Promise<void> {
     await this.applyPolyfills();
@@ -45,7 +45,7 @@ class BootManager {
 
   private applyHotReload(providerComponent: JSX.Element, node: HTMLElement) {
     if (module.hot) {
-      module.hot.accept(BootManager.ROOT_COMPONENT_PATH, () => {
+      module.hot.accept(BootManager.ROOT_CONTAINER_PATH, () => {
         ReactDOM.render(<AppContainer>{providerComponent}</AppContainer>, node);
       });
     }

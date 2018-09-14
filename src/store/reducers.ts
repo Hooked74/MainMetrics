@@ -13,9 +13,10 @@ export default {
       error: null
     };
   },
-  [Types.START_LOADING_METRICS](state: IState) {
+  [Types.START_LOADING_METRICS](state: IState, action: IAction<{ date: string }>) {
     return {
       ...state,
+      ...action.payload,
       loading: true
     };
   },

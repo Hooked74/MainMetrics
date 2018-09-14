@@ -1,12 +1,14 @@
 // tslint:disable:no-console
 import { bindActionCreators } from "redux";
+import DateList from "./date-list";
 import Types from "./types";
 
 const actions = {
-  loadMetrics() {
+  loadMetrics<T = DateList>(date: T) {
     return async dispatch => {
       dispatch({
-        type: Types.START_LOADING_METRICS
+        type: Types.START_LOADING_METRICS,
+        date
       });
 
       try {
