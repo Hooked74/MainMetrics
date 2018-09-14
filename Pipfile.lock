@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "1efef6330d8a582a801d84852a6f0ea0c5f8a7f1af82840a387834c0e19203a1"
+            "sha256": "b75e2a20b549f9a61ac476675b12ff7453bc59541c948fec85e1593d256dce17"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -28,6 +28,19 @@
                 "sha256:a080b744b7e345ccfcbc77954861cb05b3c63786e93f2b3875e0913d44b43f05"
             ],
             "version": "==1.0.2"
+        },
+        "flask-inputs": {
+            "hashes": [
+                "sha256:25925517b04adce482aa2de2310a3d8b41aad8cbbc8b4e68aadf98443ab4a7af",
+                "sha256:61d43a4fd6fdcb6dbedfc8a158b8c8e2187b5d1e823eb1445a26e441b4efea2c"
+            ],
+            "version": "==0.3.0"
+        },
+        "future": {
+            "hashes": [
+                "sha256:e39ced1ab767b5936646cedba8bcce582398233d6a627067d4c6a454c90cfedb"
+            ],
+            "version": "==0.16.0"
         },
         "gunicorn": {
             "hashes": [
@@ -61,6 +74,13 @@
                 "sha256:d5da73735293558eb1651ee2fddc4d0dedcfa06538b8813a2e20011583c9e49b"
             ],
             "version": "==0.14.1"
+        },
+        "wtforms": {
+            "hashes": [
+                "sha256:0cdbac3e7f6878086c334aa25dc5a33869a3954e9d1e015130d65a69309b3b61",
+                "sha256:e3ee092c827582c50877cdbd49e9ce6d2c5c1f6561f849b3b068c1b8029626f1"
+            ],
+            "version": "==2.2.1"
         }
     },
     "develop": {}
