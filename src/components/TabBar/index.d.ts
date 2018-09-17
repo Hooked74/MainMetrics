@@ -1,4 +1,4 @@
-declare namespace MainMetrics.components.Tabs {
+declare namespace MainMetrics.components.TabBar {
   interface IProps<T> {
     list?: T;
     value?: string;

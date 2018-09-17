@@ -1,7 +1,6 @@
 import { applyMiddleware, createStore, Middleware, Store } from "redux";
 import { createLogger } from "redux-logger";
 import thunk from "redux-thunk";
-import DateList from "./date-list";
 import reducers from "./reducers";
 
 import IState = MainMetrics.store.IState;

@@ -17,9 +17,10 @@ declare namespace MainMetrics.store {
     ctr: float;
     str: float;
     avg_price: float;
-    timeout: float;
+    timeouts: float;
     zeroes: float;
     errors: float;
+    average: float;
     errors_list: IMetricsError[];
   }
 
@@ -39,6 +40,6 @@ declare namespace MainMetrics.store {
   type TReducer = (state: IState, action: IAction) => IState;
 
   interface IActions {
-    loadMetrics?<T>(date: T): (dispatch) => Promise<void>;
+    loadMetrics?(date: string): (dispatch) => Promise<void>;
   }
 }

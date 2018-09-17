@@ -1,0 +1,33 @@
+@import "../../style/utils/variables";
+@import "../../style/utils/functions";
+@import "../../style/utils/mixins";
+
+.container {
+  display: flex;
+}
+
+.indicator {
+  margin: 8px 10px 0 0;
+
+  @include media("<=phone") {
+    margin: 10px 5px 0 0;
+    width: 7px;
+    height: 7px;
+  }
+}
+
+.message,
+.indicator {
+  flex-shrink: 0;
+}
+
+.primary {
+  @include flex-font-size(11, 16, 320, $max-content-width);
+  line-height: 28px;
+}
+
+.average {
+  @include flex-font-size(8, 12, 320, $max-content-width);
+  color: $second-font-color;
+  line-height: 16px;
+}

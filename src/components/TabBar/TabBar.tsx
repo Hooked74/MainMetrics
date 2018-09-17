@@ -1,16 +1,16 @@
+import IProps = MainMetrics.components.TabBar.IProps;
+import IState = MainMetrics.components.TabBar.IState;
+
 import classNames from "class-names";
 import React, { MouseEvent, PureComponent } from "react";
-import styles from "./Tabs.scss";
+import styles from "./TabBar.scss";
 
-import IProps = MainMetrics.components.Tabs.IProps;
-import IState = MainMetrics.components.Tabs.IState;
-
-export default class Tabs<T> extends PureComponent<IProps<T>, IState> {
+export default class TabBar<T> extends PureComponent<IProps<T>, IState> {
   public static defaultProps: IProps<any> = {
     onClick: () => void 0
   };
 
-  get tabs(): JSX.Element[] {
+  get TabBar(): JSX.Element[] {
     const { list, value } = this.props;
 
     return Object.values(list).map((v, i) => (
@@ -20,13 +20,13 @@ export default class Tabs<T> extends PureComponent<IProps<T>, IState> {
         data-value={v}
         key={i}
       >
-        {value}
+        {v}
       </button>
     ));
   }
 
   public render() {
-    return <div className={styles.container}>{this.tabs}</div>;
+    return <div className={styles.container}>{this.TabBar}</div>;
   }
 
   private onTabClick = (e: MouseEvent) => {

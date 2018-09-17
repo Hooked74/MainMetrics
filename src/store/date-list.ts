@@ -1,8 +1,8 @@
-enum DateList {
-  LAST_HOUR = "Last hour",
-  TODAY = "Today",
-  YESTERDAY = "Yesterday",
-  LAST_THREE_DAYS = "Last 3 days"
+export enum DateEnum {
+  LAST_HOUR,
+  TODAY,
+  YESTERDAY,
+  LAST_THREE_DAYS
 }
 
-export default DateList;
+export const DateList: string[] = ["Last hour", "Today", "Yesterday", "Last 3 days"];

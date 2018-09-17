@@ -1,6 +1,10 @@
 /* ###### GLOBAL VARIABLES ###### */
 
 // $COLORS
+$font-color: #4a4a4a;
+$second-font-color: #a0b0b9;
+$success-color: #8bc34a;
+$error-color: #ff6a67;
 
 // $MEDIA
 $breakpoints: (
@@ -32,15 +36,16 @@ $unit-intervals: (
 ) !default;
 
 // $FONTS
-$primaryFonts: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell,
-  "Helvetica Neue", Arial, Helvetica, sans-serif !default;
-$secondaryFonts: Arial, Helvetica, sans-serif;
+$primary-fonts: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu,
+  Cantarell, "Helvetica Neue", Arial, Helvetica, sans-serif !default;
+$secondary-fonts: Arial, Helvetica, sans-serif;
 
 // $EASING
-$primaryEasing: cubic-bezier(0.4, 0, 0.2, 1) !default;
+$primary-easing: cubic-bezier(0.4, 0, 0.2, 1) !default;
 
 // $Z-INDEXES
 
 // $SIZE
+$max-content-width: 600;
 
 // $INDENTS

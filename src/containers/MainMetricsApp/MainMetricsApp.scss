@@ -1,2 +1,27 @@
+@import "../../style/utils/variables";
+
 .container {
+  position: relative;
+
+  padding: 20px;
+}
+
+.header h1 {
+  font-size: 22px;
+  line-height: 28px;
+
+  margin-top: 0;
+}
+
+.main {
+  max-width: #{$max-content-width}px;
+  margin-top: 20px;
+}
+
+.sections {
+  margin-top: 20px;
+}
+
+.error {
+  //
 }

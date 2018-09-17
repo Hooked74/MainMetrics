@@ -1,0 +1,46 @@
+@import "../../style/utils/variables";
+@import "../../style/utils/functions";
+@import "../../style/utils/mixins";
+
+$active-color: #2196f3;
+
+.container {
+  //
+}
+
+.item {
+  @include flex-font-size(8, 14, 320, $max-content-width);
+
+  line-height: 20px;
+
+  padding: 4px 16px;
+
+  cursor: pointer;
+  transition: color 0.2s $primary-easing, background-color 0.2s $primary-easing;
+  text-align: center;
+
+  border: 1px solid #d9d9d9;
+  outline: none;
+  background-color: white;
+
+  &:first-child {
+    border-radius: 5px 0 0 5px;
+  }
+
+  &:last-child {
+    border-radius: 0 5px 5px 0;
+  }
+
+  + .item {
+    border-left: none;
+  }
+}
+
+.active {
+  pointer-events: none;
+
+  color: white;
+  border-top-color: $active-color;
+  border-bottom-color: $active-color;
+  background-color: $active-color;
+}
